@@ -1,0 +1,130 @@
+/* Настройка общих стилей */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.page-text {
+  color: #86928b;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Стилизация меню */
+
+.header {
+  background: #e1ede6;
+  height: 100px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 38px;
+}
+
+.header__menu--links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.menu-link {
+  color: #2c2d35;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+  color: #598d66;
+}
+
+/* Стилизация главного контента сайта */
+
+/* Стилизация футера */
+
+footer {
+  background: #e1ede6;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 168px;
+  padding-top: 23px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__right {
+  display: flex;
+  padding-left: 115px;
+}
+
+.footer__left--logo {
+  padding-bottom: 35px;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 60px;
+  padding-right: 250px;
+}
+
+.footer__social-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  color: #2c2d35;
+  font-size: 20px;
+}
+
+.social-text {
+  font-size: 12px;
+}
