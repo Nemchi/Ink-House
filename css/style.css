@@ -1,8 +1,16 @@
 /* Настройка общих стилей */
-
 * {
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -62,6 +70,12 @@ main {
   gap: 60px;
 }
 
+.header__menu-right {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
 .menu-link {
   color: #2c2d35;
   font-size: 20px;
@@ -72,7 +86,265 @@ main {
   color: #598d66;
 }
 
+.burger-menu--btn {
+  display: none;
+}
+
 /* Стилизация главного контента сайта */
+/* Стилизация баннера */
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner-img {
+  max-width: 50%;
+  height: auto;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.banner-title {
+  color: #2c2d35;
+  font-size: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+  line-height: clamp(1.875rem, 1.232rem + 3.21vw, 4.125rem);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.banner_company-name {
+  color: #598d66;
+  font-size: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+  line-height: clamp(1.875rem, 1.232rem + 3.21vw, 4.125rem);
+  font-weight: 500;
+}
+
+.banner-text {
+  color: #86928b;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+  font-weight: 500;
+  line-height: clamp(1.313rem, 1.205rem + 0.54vw, 1.688rem);
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.banner-btn {
+  color: #598d66;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px #598d66 solid;
+  padding: 21px 60px;
+  transition: all 340ms ease-in-out;
+}
+
+.banner-btn:hover {
+  background: #598d66;
+  color: #f4f6f5;
+}
+
+/* Стилизация header католога товаров */
+.catolog_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.catolog_header-title {
+  color: #2c2d35;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.category_header-btn {
+  background: #d4e8d9;
+  border-radius: 20px;
+  color: #2c2d35;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: background 0.5s;
+}
+
+.category_header-btn:hover {
+  background: #598d66;
+  color: #f4f6f5;
+}
+
+.category_header-btn:active {
+  background: #376b44;
+  color: #f4f6f5;
+}
+
+.category_header-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Стилизация карточек товаров */
+.france-cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 30px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 20px 30px;
+  background: #e1ede6;
+  box-sizing: border-box;
+}
+
+.card_author {
+  color: #86928b;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.card_name {
+  color: #2c2d35;
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.card_description {
+  color: #2c2d35;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+.card_price {
+  color: #598d66;
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.card_btn {
+  color: #598d66;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  background: none;
+  border: 1px #598d66 solid;
+  padding: 20px 60px;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  background: #598d66;
+  color: #f4f6f5;
+}
+
+.card_btn:active {
+  background: #376b44;
+  color: white;
+}
+
+/* Стилизация блока новостей */
+
+.news {
+  background-image: url(/assets/pic_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+}
+
+.news-textblock {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+}
+
+.news-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.news-title h2 {
+  color: #f4f6f5;
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  line-height: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  font-weight: 500;
+  margin: 0 0 0 20px;
+}
+
+.news-description p {
+  max-width: 540px;
+  color: white;
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+  font-weight: 500;
+  line-height: clamp(1.4rem, 1.318rem + 0.41vw, 1.688rem);
+  margin-bottom: 20px;
+}
+
+.news-btn {
+  display: inline-block;
+  width: auto;
+  border: 1px solid transparent;
+  background: #eedb6d;
+  padding: 20px 60px;
+  color: #2c2d35;
+  font-size: 20px;
+}
+
+/* Стилизация блока "О нас" */
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 112px;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  top: 45px;
+  left: 30px;
+}
+
+.about-title {
+  color: #2c2d35;
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  font-weight: 500;
+  line-height: clamp(1.5rem, 1.143rem + 1.79vw, 2.75rem);
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: #2c2d35;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.about_out-personal {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.img-about {
+  max-width: 50%;
+  height: auto;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
 
 /* Стилизация футера */
 
@@ -123,8 +395,157 @@ footer {
 .footer-text {
   color: #2c2d35;
   font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 6px;
 }
 
 .social-text {
   font-size: 12px;
+}
+
+/* Стилизация бургер кнопки */
+.burger-menu--btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #e1ede6;
+  position: relative;
+  left: 0;
+  color: #4c5866;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger-menu--btn span,
+.burger-menu--btn span::before,
+.burger-menu--btn span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #2c2d35;
+}
+
+.burger-menu--btn span::before,
+.burger-menu--btn span::after {
+  content: "";
+  transition: 0.3s;
+}
+.burger-menu--btn span::before {
+  transform: translateY(-5px);
+}
+.burger-menu--btn span::after {
+  transform: translateY(5px);
+}
+.burger-active span {
+  height: 0;
+}
+.burger-active span::before {
+  transform: rotate(-45deg);
+}
+
+.burger-active span::after {
+  transform: rotate(45deg);
+}
+
+
+/* Медиа-запросы для адаптива */
+
+@media (max-width: 480px) {
+  .header__menu-right {
+    display: flex;
+    border: none;
+  }
+  .header__menu--links {
+    display: none;
+  }
+  .banner-img {
+    display: none;
+  }
+  .banner-desription {
+    margin: 60px 0;
+  }
+  .banner-title {
+    padding-bottom: 20px;
+  }
+  .banner-text {
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 calc(100% - 30px);
+  }
+  .about-description {
+    top: 30px;
+    left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 123px;
+  }
+  .header__menu {
+    display: inline-block;
+    width: 100%;
+    padding: 22px 0 0 0;
+  }
+  .header__menu--logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+
+  .header__menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px #c3d1c6 solid;
+  }
+
+  .banner-btn {
+    padding: 14.5px 41px;
+  }
+  .banner {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catolog_header {
+    margin-bottom: 20px;
+  }
+  .catolog_header-btns {
+    padding-top: 20px;
+  }
+  .banner-title {
+    white-space: unset;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .img-about {
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .about-description {
+    top: 40px;
+    left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 30px);
+  }
 }
