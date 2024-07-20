@@ -12,28 +12,189 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Ink house</title>
   </head>
+
   <body>
     <div class="page">
       <header class="header">
         <div class="container">
           <div class="header__menu">
-            <img src="/assets/logo.png" alt="logo" class="header__menu--logo" />
-            <ul class="header__menu--links">
-              <li><a class="menu-link" href="#">Репродукции</a></li>
-              <li><a class="menu-link" href="#">Новинки</a></li>
-              <li><a class="menu-link" href="#">О нас</a></li>
-              <li>
-                <a class="menu-link" href="#"
-                  ><img src="/assets/cart.svg" alt="cart"
-                /></a>
-              </li>
-            </ul>
+            <div class="header__menu--logo">
+              <img src="/assets/logo.png" alt="logo" />
+            </div>
+            <div class="header__menu-right">
+              <a href="#" class="burger-menu--btn">
+                <span></span>
+              </a>
+              <nav class="header__menu--nav">
+                <ul class="header__menu--links">
+                  <li><a class="menu-link" href="#products">Репродукции</a></li>
+                  <li><a class="menu-link" href="#novelty">Новинки</a></li>
+                  <li><a class="menu-link" href="#about">О нас</a></li>
+                </ul>
+              </nav>
+              <a class="menu-link" href="#">
+                <img src="/assets/cart.svg" alt="cart" />
+              </a>
+            </div>
           </div>
         </div>
       </header>
 
       <main>
-        <div class="container"></div>
+        <!-- Баннер -->
+        <section>
+          <div class="container">
+            <div class="banner">
+              <img
+                src="/assets/Layer 0 1.png"
+                alt="banner"
+                class="banner-img"
+              />
+              <div class="banner-desription">
+                <h1 class="banner-title">
+                  Реплики картин от <br /><span class="banner_company-name"
+                    >Ink. House</span
+                  >
+                </h1>
+                <p class="banner-text">
+                  Высокое качество отрисовки на плотной бумаге или льняном
+                  холсте. Редкие произведения, доступные цены.
+                </p>
+                <a href="#" class="banner-btn">Продукция</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Карточки товаров -->
+        <section id="products">
+          <div class="container">
+            <header class="catolog_header">
+              <h2 class="catolog_header-title">Репродукции</h2>
+              <div class="catolog_header-btns">
+                <button class="category_header-btn" type="button">
+                  Франция
+                </button>
+                <button class="category_header-btn" type="button">
+                  Германия
+                </button>
+                <button class="category_header-btn" type="button">
+                  Англия
+                </button>
+              </div>
+            </header>
+
+            <div class="france-cards">
+              <article class="card">
+                <img src="/assets/01.jpg" alt="Card_img" />
+                <p class="card_author">Марсель Руссо</p>
+                <h2 class="card_name">Охота Амура</h2>
+                <p class="card_description">Холст, масло (50х80)</p>
+                <p class="card_price">14 500 руб</p>
+                <button class="card_btn" type="button">В корзину</button>
+              </article>
+
+              <article class="card">
+                <img src="/assets/02.jpg" alt="Card_img" />
+                <p class="card_author">Анри Селин</p>
+                <h2 class="card_name">Дама с собачкой</h2>
+                <p class="card_description">Акрил, бумага (50х80)</p>
+                <p class="card_price">16 500 руб</p>
+                <button class="card_btn" type="button">В корзину</button>
+              </article>
+
+              <article class="card">
+                <img src="/assets/03.jpg" alt="Card_img" />
+                <p class="card_author">Франсуа Дюпон</p>
+                <h2 class="card_name">Процедура</h2>
+                <p class="card_description">Цветная литография (40х60)</p>
+                <p class="card_price">20 000 руб</p>
+                <button class="card_btn" type="button">В корзину</button>
+              </article>
+
+              <article class="card">
+                <img src="/assets/04.jpg" alt="Card_img" />
+                <p class="card_author">Луи Детуш</p>
+                <h2 class="card_name">Роза</h2>
+                <p class="card_description">Бумага, акрил (50х80)</p>
+                <p class="card_price">12 000 руб</p>
+                <button class="card_btn" type="button">В корзину</button>
+              </article>
+
+              <article class="card">
+                <img src="/assets/05.jpg" alt="Card_img" />
+                <p class="card_author">Франсуа Дюпон</p>
+                <h2 class="card_name">Птичья трапеза</h2>
+                <p class="card_description">Цветная литография (40х60)</p>
+                <p class="card_price">22 500 руб</p>
+                <button class="card_btn" type="button">В корзину</button>
+              </article>
+
+              <article class="card">
+                <img src="/assets/06.jpg" alt="Card_img" />
+                <p class="card_author">Пьер Моранж</p>
+                <h2 class="card_name">Пейзаж с рыбой</h2>
+                <p class="card_description">Цветная литография (40х60)</p>
+                <p class="card_price">20 000 руб</p>
+                <button class="card_btn">В корзину</button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Новость -->
+        <section id="novelty">
+          <div class="news">
+            <div class="container">
+              <div class="news-textblock">
+                <div class="news-title">
+                  <img src="/assets/Star 2.png" alt="Star" />
+                  <h2>
+                    Новая коллекция<br />
+                    французских авторов
+                  </h2>
+                </div>
+                <div class="news-description">
+                  <p>
+                    Сложно сказать, почему акционеры крупнейших компаний
+                    призывают нас к новым свершениям, которые, в свою очередь,
+                    должны быть заблокированы в рамках своих собственных
+                    рациональных ограничений.
+                  </p>
+                  <p>
+                    Принимая во внимание показатели успешности, граница обучения
+                    кадров предопределяет высокую востребованность направлений
+                    прогрессивного развития.
+                  </p>
+                  <a href="#" class="news-btn">Ознакомиться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- О нас -->
+        <section id="about">
+          <div class="container">
+            <div class="about">
+              <img src="/assets/Group 210.png" alt="About" class="img-about" />
+              <div class="about-description">
+                <h2 class="about-title">Наша команда</h2>
+                <p class="about-text">
+                  Значимость этих проблем настолько очевидна, что базовый вектор
+                  развития позволяет оценить значение экспериментов, поражающих
+                  по своей масштабности и грандиозности. Мы вынуждены
+                  отталкиваться от того, что консультация с широким активом.
+                </p>
+                <div class="about_out-personal">
+                  <img src="/assets/Ellipse 30.png" alt="personal1" />
+                  <img src="/assets/Ellipse 31.jpg" alt="personal2" />
+                  <img src="/assets/Ellipse 32.jpg" alt="personal3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer>
@@ -74,7 +235,7 @@
                   </ul>
                 </div>
               </div>
-              
+
               <div class="footer__social-menu">
                 <div class="social-links">
                   <img src="/assets/facebook.svg" alt="facebook" />
@@ -88,8 +249,6 @@
                 </span>
               </div>
             </div>
-
-            
           </div>
         </div>
       </footer>
